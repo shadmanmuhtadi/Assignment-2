@@ -11,25 +11,22 @@ function isOdd(number) {
 console.log(isOdd(10));
 
 // ANS NO - 3
-function findMin() {
-    let number = [3,2,5,1,-4,6,7,9,-3];
+function findMin(number) {
     return Math.min(...number)
 }
-console.log(findMin());
+console.log(findMin([3,2,5,1,-4,6,7,9,-3]));
 
 // ANS NO - 4
-function filterEvenNumbers() {
-    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function filterEvenNumbers(numbers) {
     return numbers.filter(num => num % 2 === 0);
 }
-console.log(filterEvenNumbers());
+console.log(filterEvenNumbers([1,2,3,4,5,6,7,8,9,10,14]));
 
 // ANS NO -5
-function sortArrayDescending() {
-    let numbers = [30,23,53,21,33,43,7];
+function sortArrayDescending(numbers) {
     return numbers.sort((a,b) => a - b);
 }
-console.log(sortArrayDescending());
+console.log(sortArrayDescending([30,23,53,21,33,43,7]));
 
 
 // ANS NO - 6
@@ -39,15 +36,15 @@ function lowercaseFirstLetter(title) {
 console.log(lowercaseFirstLetter("SHADMAN MUHTADI"));
 
 // ANS NO - 7
-function findAverage() {
-    let numbers = [1,2,3,4,5,6,7,8,9];
+function findAverage(numbers) {
+    // let numbers = [1,2,3,4,5,6,7,8,9];
     let sum = 0;
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
     }
     return sum;
 }
-console.log(findAverage());
+console.log(findAverage([1,2,3,4,5,6,7,8,9]));
 
 // ANS NO - 8
 function isLeapYear(year) {
